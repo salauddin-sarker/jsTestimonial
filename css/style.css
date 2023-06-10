@@ -1,0 +1,102 @@
+/* <======== Global Css =======> */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* <======== Main Css =======> */
+.container{
+    align-items: center;
+    background-color: #e3f2fd;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+}
+.testimonial{
+    /* background-color: #fff; */
+    max-width: 900px;
+    overflow: hidden;
+    position: relative;
+    padding: 50px 0;
+    width: 100%;
+}
+.testimonial .slide{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+}
+.testimonial .image{
+    border-radius: 50%;
+    height: 170px;
+    object-fit: cover;
+    width: 170px;
+}
+.slide p{
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 100px;
+    text-align: center;
+}
+.slide .quote_icon{
+    color: #4070f4;
+    font-size: 30px;
+}
+.slide .details{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.details .name{
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+.details .job{
+    color: #333;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.nav-btn{
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    height: 40px;
+    transform: translateY(30px);
+    transition: 0.3s;
+    width: 40px;
+}
+.nav-btn:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-btn::after,
+.nav-btn::after,
+.nav-btn::before{
+    color: #fff;
+    font-size: 20px;
+}
+.swiper-pagination-bullet{
+    background-color: rgba(0, 0, 0, 0.8);;
+}
+.swiper-pagination-bullet-active{
+    background-color: #4070f4;
+}
+
+@media screen and (max-width: 768px) {
+    .slide p{
+        padding: 0 20px;
+    }
+    .nav-btn{
+        display: none;
+    }
+}
